@@ -48,7 +48,31 @@ jobs:
 
       - if: steps.pick.outputs.skip != 'true'
         name: build
-        run: ./build.sh "${{ steps.pick.outputs.tag }}"
+        id: build
+        # explicit bash = -eo pipefail, so a failed build.sh still fails through tee
+        shell: bash
+        run: ./build.sh "${{ steps.pick.outputs.tag }}" 2>&1 | tee build.log
+
+      # build-logs branch: latest.log + one file per run, readable without login
+      - if: always() && steps.pick.outputs.skip != 'true' && hashFiles('build.log') != ''
+        name: save build log
+        run: |
+          log="$PWD/build.log"
+          cd "$(mktemp -d)"
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          if git fetch -q --depth 1 origin build-logs; then
+            git checkout -q -b build-logs FETCH_HEAD
+          else
+            git checkout -q --orphan build-logs
+          fi
+          cp "$log" latest.log
+          cp "$log" "${GITHUB_RUN_ID}.log"
+          git add latest.log "${GITHUB_RUN_ID}.log"
+          git commit -qm "build log ${GITHUB_RUN_ID}: ${{ steps.pick.outputs.tag }} ${{ steps.build.outcome }}"
+          git push -q origin build-logs
 
       - if: steps.pick.outputs.skip != 'true'
         name: release
