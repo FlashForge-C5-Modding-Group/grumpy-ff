@@ -34,10 +34,12 @@ run sh -c 'make wpaclient && make libhv.a && make -j$(nproc)'
 # FlashForge's kernels only run NaN2008; match FlashForge's own binaries
 BIN=build/ff/bin/grumpyscreen
 abi=$(run sh -c "mipsel-linux-musl-readelf -h -A -l $BIN")
+echo "$abi"
+# here-strings, not pipes: grep -q exits early and pipefail would fail the echo
 for want in 'nan2008' 'mips32r2' 'FP ABI: Hard float (32-bit CPU, 64-bit FPU)'; do
-	echo "$abi" | grep -qF "$want" || { echo "ABI check failed: no '$want'"; exit 1; }
+	grep -qF "$want" <<< "$abi" || { echo "ABI check failed: no '$want'"; exit 1; }
 done
-echo "$abi" | grep -q 'INTERP' && { echo "ABI check failed: not static"; exit 1; }
+grep -q 'INTERP' <<< "$abi" && { echo "ABI check failed: not static"; exit 1; }
 echo "ABI check passed: static, mips32r2, nan2008, FP64"
 
 mkdir -p dist/grumpyscreen
