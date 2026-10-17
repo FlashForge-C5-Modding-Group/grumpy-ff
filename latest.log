@@ -107,8 +107,8 @@ BUILD_TYPE       = RELEASE
 SRCS=base/hbase.c base/herr.c base/hlog.c base/hmain.c base/hsocket.c base/htime.c base/hversion.c base/rbtree.c ssl/appletls.c ssl/gnutls.c ssl/hssl.c ssl/mbedtls.c ssl/nossl.c ssl/openssl.c ssl/wintls.c event/epoll.c event/evport.c event/hevent.c event/hloop.c event/iocp.c event/kqueue.c event/nio.c event/nlog.c event/noevent.c event/overlapio.c event/poll.c event/rudp.c event/select.c event/unpack.c event/kcp/hkcp.c event/kcp/ikcp.c util/base64.c util/md5.c util/sha1.c cpputil/RAII.cpp cpputil/ThreadLocalStorage.cpp cpputil/hasync.cpp cpputil/hdir.cpp cpputil/hpath.cpp cpputil/hstring.cpp cpputil/hurl.cpp cpputil/ifconfig.cpp cpputil/iniparser.cpp protocol/dns.c protocol/ftp.c protocol/icmp.c protocol/smtp.c http/http_parser.c http/httpdef.c http/multipart_parser.c http/websocket_parser.c http/wsdef.c http/Http1Parser.cpp http/Http2Parser.cpp http/HttpMessage.cpp http/HttpParser.cpp http/WebSocketChannel.cpp http/WebSocketParser.cpp http/http_content.cpp http/client/AsyncHttpClient.cpp http/client/HttpClient.cpp http/client/WebSocketClient.cpp http/server/FileCache.cpp http/server/HttpHandler.cpp http/server/HttpMiddleware.cpp http/server/HttpResponseWriter.cpp http/server/HttpServer.cpp http/server/HttpService.cpp http/server/http_page.cpp mqtt/mqtt_client.c mqtt/mqtt_protocol.c
 OBJS=base/hbase.o base/herr.o base/hlog.o base/hmain.o base/hsocket.o base/htime.o base/hversion.o base/rbtree.o ssl/appletls.o ssl/gnutls.o ssl/hssl.o ssl/mbedtls.o ssl/nossl.o ssl/openssl.o ssl/wintls.o event/epoll.o event/evport.o event/hevent.o event/hloop.o event/iocp.o event/kqueue.o event/nio.o event/nlog.o event/noevent.o event/overlapio.o event/poll.o event/rudp.o event/select.o event/unpack.o event/kcp/hkcp.o event/kcp/ikcp.o util/base64.o util/md5.o util/sha1.o cpputil/RAII.o cpputil/ThreadLocalStorage.o cpputil/hasync.o cpputil/hdir.o cpputil/hpath.o cpputil/hstring.o cpputil/hurl.o cpputil/ifconfig.o cpputil/iniparser.o protocol/dns.o protocol/ftp.o protocol/icmp.o protocol/smtp.o http/http_parser.o http/httpdef.o http/multipart_parser.o http/websocket_parser.o http/wsdef.o http/Http1Parser.o http/Http2Parser.o http/HttpMessage.o http/HttpParser.o http/WebSocketChannel.o http/WebSocketParser.o http/http_content.o http/client/AsyncHttpClient.o http/client/HttpClient.o http/client/WebSocketClient.o http/server/FileCache.o http/server/HttpHandler.o http/server/HttpMiddleware.o http/server/HttpResponseWriter.o http/server/HttpServer.o http/server/HttpService.o http/server/http_page.o mqtt/mqtt_client.o mqtt/mqtt_protocol.o
 rm -r 2>/dev/null base/hbase.o base/herr.o base/hlog.o base/hmain.o base/hsocket.o base/htime.o base/hversion.o base/rbtree.o ssl/appletls.o ssl/gnutls.o ssl/hssl.o ssl/mbedtls.o ssl/nossl.o ssl/openssl.o ssl/wintls.o event/epoll.o event/evport.o event/hevent.o event/hloop.o event/iocp.o event/kqueue.o event/nio.o event/nlog.o event/noevent.o event/overlapio.o event/poll.o event/rudp.o event/select.o event/unpack.o event/kcp/hkcp.o event/kcp/ikcp.o util/base64.o util/md5.o util/sha1.o cpputil/RAII.o cpputil/ThreadLocalStorage.o cpputil/hasync.o cpputil/hdir.o cpputil/hpath.o cpputil/hstring.o cpputil/hurl.o cpputil/ifconfig.o cpputil/iniparser.o protocol/dns.o protocol/ftp.o protocol/icmp.o protocol/smtp.o http/http_parser.o http/httpdef.o http/multipart_parser.o http/websocket_parser.o http/wsdef.o http/Http1Parser.o http/Http2Parser.o http/HttpMessage.o http/HttpParser.o http/WebSocketChannel.o http/WebSocketParser.o http/http_content.o http/client/AsyncHttpClient.o http/client/HttpClient.o http/client/WebSocketClient.o http/server/FileCache.o http/server/HttpHandler.o http/server/HttpMiddleware.o http/server/HttpResponseWriter.o http/server/HttpServer.o http/server/HttpService.o http/server/http_page.o mqtt/mqtt_client.o mqtt/mqtt_protocol.o
-make[2]: [Makefile.in:284: clean] Error 1 (ignored)
 #-rm -r 2>/dev/null lib
+make[2]: [Makefile.in:284: clean] Error 1 (ignored)
 #-rm -r 2>/dev/null bin
 make[2]: Leaving directory '/src/libhv'
 rm -r 2>/dev/null examples/*.o examples/*/*.o
@@ -121,8 +121,8 @@ make -C libhv -j$(nproc) libhv
 make[1]: Entering directory '/src/libhv'
 mkdir -p 2>/dev/null lib
 make -f Makefile.in TARGET=libhv TARGET_TYPE="SHARED|STATIC" SRCDIRS=". base ssl event util cpputil evpp http http/server http/client"
-make[2]: Entering directory '/src/libhv'
 make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+make[2]: Entering directory '/src/libhv'
 mipsel-linux-musl-gcc (GCC) 12.4.0
 OS   = Linux
 ARCH = mipsel
@@ -300,21 +300,21 @@ CC ./lvgl/src/core/lv_indev.c
 CC ./lvgl/src/core/lv_obj.c
 CC ./lvgl/src/core/lv_obj_style_gen.c
 CC ./lvgl/src/core/lv_obj_scroll.c
-CC ./lvgl/src/core/lv_obj_tree.c
 CC ./lvgl/src/core/lv_obj_style.c
+CC ./lvgl/src/core/lv_obj_tree.c
 CC ./lvgl/src/core/lv_obj_pos.c
 CC ./lvgl/src/core/lv_theme.c
 CC ./lvgl/src/draw/lv_draw_arc.c
 CC ./lvgl/src/draw/lv_draw.c
 CC ./lvgl/src/core/lv_event.c
-CC ./lvgl/src/draw/lv_draw_line.c
 CC ./lvgl/src/draw/lv_draw_img.c
+CC ./lvgl/src/draw/lv_draw_line.c
 CC ./lvgl/src/draw/lv_draw_rect.c
-CC ./lvgl/src/draw/lv_draw_transform.c
 CC ./lvgl/src/draw/lv_draw_label.c
+CC ./lvgl/src/draw/lv_draw_transform.c
 CC ./lvgl/src/draw/lv_draw_triangle.c
-CC ./lvgl/src/draw/lv_draw_layer.c
 CC ./lvgl/src/core/lv_refr.c
+CC ./lvgl/src/draw/lv_draw_layer.c
 CC ./lvgl/src/draw/lv_img_cache.c
 CC ./lvgl/src/draw/arm2d/lv_gpu_arm2d.c
 CC ./lvgl/src/draw/lv_img_buf.c
@@ -325,12 +325,12 @@ CC ./lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c
 CC ./lvgl/src/draw/nxp/vglite/lv_draw_vglite.c
 CC ./lvgl/src/draw/nxp/vglite/lv_draw_vglite_arc.c
 CC ./lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.c
-CC ./lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.c
 CC ./lvgl/src/draw/lv_img_decoder.c
+CC ./lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.c
 CC ./lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.c
 CC ./lvgl/src/draw/nxp/vglite/lv_vglite_buf.c
-CC ./lvgl/src/draw/sdl/lv_draw_sdl.c
 CC ./lvgl/src/draw/nxp/vglite/lv_vglite_utils.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl.c
 CC ./lvgl/src/draw/sdl/lv_draw_sdl_arc.c
 CC ./lvgl/src/draw/sdl/lv_draw_sdl_bg.c
 CC ./lvgl/src/draw/sdl/lv_draw_sdl_composite.c
@@ -361,20 +361,20 @@ CC ./lvgl/src/draw/sw/lv_draw_sw_transform.c
 CC lvgl/src/extra/lv_extra.c
 CC lvgl/src/extra/themes/basic/lv_theme_basic.c
 CC lvgl/src/extra/layouts/grid/lv_grid.c
-CC lvgl/src/extra/layouts/flex/lv_flex.c
 CC ./lvgl/src/draw/sw/lv_draw_sw_rect.c
+CC lvgl/src/extra/layouts/flex/lv_flex.c
 CC lvgl/src/extra/others/msg/lv_msg.c
 CC lvgl/src/extra/others/gridnav/lv_gridnav.c
 CC lvgl/src/extra/others/fragment/lv_fragment.c
-CC lvgl/src/extra/others/imgfont/lv_imgfont.c
 CC lvgl/src/extra/others/fragment/lv_fragment_manager.c
+CC lvgl/src/extra/others/imgfont/lv_imgfont.c
 CC lvgl/src/extra/others/snapshot/lv_snapshot.c
 CC lvgl/src/extra/themes/mono/lv_theme_mono.c
 CC lvgl/src/extra/others/ime/lv_ime_pinyin.c
 CC lvgl/src/extra/others/monkey/lv_monkey.c
 CC lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.c
-CC lvgl/src/extra/libs/freetype/lv_freetype.c
 CC lvgl/src/extra/libs/gif/gifdec.c
+CC lvgl/src/extra/libs/freetype/lv_freetype.c
 CC lvgl/src/extra/libs/sjpg/tjpgd.c
 CC lvgl/src/extra/libs/gif/lv_gif.c
 CC lvgl/src/extra/libs/sjpg/lv_sjpg.c
@@ -390,10 +390,10 @@ CC lvgl/src/extra/libs/fsdrv/lv_fs_posix.c
 CC lvgl/src/extra/libs/rlottie/lv_rlottie.c
 CC lvgl/src/extra/themes/default/lv_theme_default.c
 CC lvgl/src/extra/libs/qrcode/qrcodegen.c
-CC lvgl/src/extra/widgets/meter/lv_meter.c
 CC lvgl/src/extra/widgets/spinbox/lv_spinbox.c
-CC lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.c
+CC lvgl/src/extra/widgets/meter/lv_meter.c
 CC lvgl/src/extra/widgets/led/lv_led.c
+CC lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.c
 CC lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.c
 CC lvgl/src/extra/widgets/calendar/lv_calendar.c
 CC lvgl/src/extra/widgets/msgbox/lv_msgbox.c
@@ -413,8 +413,8 @@ CC ./lvgl/src/font/lv_font_loader.c
 CC ./lvgl/src/font/lv_font_dejavu_16_persian_hebrew.c
 CC lvgl/src/extra/widgets/chart/lv_chart.c
 CC ./lvgl/src/font/lv_font_montserrat_8.c
-CC ./lvgl/src/font/lv_font_fmt_txt.c
 CC ./lvgl/src/font/lv_font_montserrat_10.c
+CC ./lvgl/src/font/lv_font_fmt_txt.c
 CC ./lvgl/src/font/lv_font_montserrat_12_subpx.c
 CC ./lvgl/src/font/lv_font_montserrat_12.c
 CC ./lvgl/src/font/lv_font_montserrat_14.c
@@ -425,25 +425,25 @@ CC ./lvgl/src/font/lv_font_montserrat_22.c
 CC ./lvgl/src/font/lv_font_montserrat_24.c
 CC ./lvgl/src/font/lv_font_montserrat_26.c
 CC ./lvgl/src/font/lv_font_montserrat_28_compressed.c
-CC ./lvgl/src/font/lv_font_montserrat_30.c
 CC ./lvgl/src/font/lv_font_montserrat_28.c
+CC ./lvgl/src/font/lv_font_montserrat_30.c
 CC ./lvgl/src/font/lv_font_montserrat_32.c
 CC ./lvgl/src/font/lv_font_montserrat_34.c
-CC ./lvgl/src/font/lv_font_montserrat_38.c
 CC ./lvgl/src/font/lv_font_montserrat_36.c
+CC ./lvgl/src/font/lv_font_montserrat_38.c
 CC ./lvgl/src/font/lv_font_montserrat_40.c
 CC ./lvgl/src/font/lv_font_montserrat_42.c
-CC ./lvgl/src/font/lv_font_montserrat_46.c
 CC ./lvgl/src/font/lv_font_montserrat_44.c
+CC ./lvgl/src/font/lv_font_montserrat_46.c
 CC ./lvgl/src/font/lv_font_montserrat_48.c
-CC ./lvgl/src/font/lv_font_unscii_8.c
 CC ./lvgl/src/font/lv_font_simsun_16_cjk.c
+CC ./lvgl/src/font/lv_font_unscii_8.c
 CC ./lvgl/src/font/lv_font_unscii_16.c
 CC ./lvgl/src/hal/lv_hal_tick.c
 CC ./lvgl/src/hal/lv_hal_indev.c
+CC ./lvgl/src/misc/lv_anim_timeline.c
 CC ./lvgl/src/hal/lv_hal_disp.c
 CC ./lvgl/src/misc/lv_anim.c
-CC ./lvgl/src/misc/lv_anim_timeline.c
 CC ./lvgl/src/misc/lv_bidi.c
 CC ./lvgl/src/misc/lv_async.c
 CC ./lvgl/src/misc/lv_area.c
@@ -460,19 +460,19 @@ CC ./lvgl/src/misc/lv_printf.c
 CC ./lvgl/src/misc/lv_tlsf.c
 CC ./lvgl/src/misc/lv_timer.c
 CC ./lvgl/src/misc/lv_txt_ap.c
-CC ./lvgl/src/misc/lv_style_gen.c
 CC ./lvgl/src/misc/lv_utils.c
+CC ./lvgl/src/misc/lv_style_gen.c
 CC lvgl/src/extra/libs/png/lodepng.c
-CC ./lvgl/src/misc/lv_txt.c
 CC ./lvgl/src/widgets/lv_btn.c
+CC ./lvgl/src/misc/lv_txt.c
 CC ./lvgl/src/widgets/lv_bar.c
 CC ./lvgl/src/widgets/lv_checkbox.c
 CC ./lvgl/src/widgets/lv_arc.c
 CC ./lvgl/src/widgets/lv_canvas.c
 CC ./lvgl/src/widgets/lv_btnmatrix.c
 CC ./lvgl/src/widgets/lv_img.c
-CC ./lvgl/src/widgets/lv_dropdown.c
 CC ./lvgl/src/widgets/lv_line.c
+CC ./lvgl/src/widgets/lv_dropdown.c
 CC ./lvgl/src/widgets/lv_switch.c
 CC ./lvgl/src/widgets/lv_slider.c
 CC ./lvgl/src/widgets/lv_label.c
@@ -496,17 +496,17 @@ CC lv_drivers/display/drm.c
 CC lv_drivers/sdl/sdl.c
 CC lv_drivers/sdl/sdl_common.c
 CC lv_drivers/sdl/sdl_gpu.c
-CC lv_drivers/display/fbdev.c
 CC ./lvgl/src/widgets/lv_table.c
-CC assets/checker_24.c
+CC lv_drivers/display/fbdev.c
 CC ./lvgl/src/widgets/lv_textarea.c
+CC assets/checker_24.c
 CC assets/materialdesign_font_40.c
 CC lv_touch_calibration/lv_tc_indicator_img.c
 CC assets/dejavusans_mono_14.c
 CC lv_touch_calibration/lv_tc.c
 CC assets/material/arrow_down.c
-CC assets/material/arrow_left.c
 CC lv_touch_calibration/lv_tc_screen.c
+CC assets/material/arrow_left.c
 CC assets/material/arrow_right.c
 CC assets/material/arrow_up.c
 CC assets/material/back.c
@@ -530,8 +530,8 @@ CC assets/material/gui_img.c
 CC assets/material/heater.c
 CC assets/material/home.c
 CC assets/material/home_z.c
-CC assets/material/hourglass.c
 CC assets/material/infinity_img.c
+CC assets/material/hourglass.c
 CC assets/material/info_img.c
 CC assets/material/layers_img.c
 CC assets/material/light_img.c
@@ -566,20 +566,20 @@ CXX src/image_label.cpp
 CXX src/finetune_panel.cpp
 CXX src/homing_panel.cpp
 CXX src/guppyscreen.cpp
-CXX src/init_panel.cpp
 CXX src/macro_panel.cpp
+CXX src/init_panel.cpp
 CXX src/led_panel.cpp
 CXX src/main.cpp
 CXX src/mini_print_status.cpp
 CXX src/net_utils.cpp
 CXX src/notify_consumer.cpp
-CXX src/mmu_tools.cpp
 CXX src/main_panel.cpp
+CXX src/mmu_tools.cpp
 CXX src/mmu_panel.cpp
 CXX src/numpad.cpp
 CXX src/selector.cpp
-CXX src/prompt_panel.cpp
 CXX src/print_status_panel.cpp
+CXX src/prompt_panel.cpp
 CXX src/sensor_container.cpp
 CXX src/print_panel.cpp
 CXX src/slider_container.cpp
