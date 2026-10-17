@@ -47,5 +47,5 @@ cp work/src/$BIN work/src/grumpyscreen.cfg dist/grumpyscreen/
 cp start.sh dist/grumpyscreen/
 chmod +x dist/grumpyscreen/grumpyscreen dist/grumpyscreen/start.sh
 echo "$TAG $COMMIT" > dist/grumpyscreen/VERSION
-tar czf dist/grumpyscreen-ff.tar.gz -C dist grumpyscreen
+tar czf dist/grumpyscreen-ff.tar.gz --owner=0 --group=0 -C dist grumpyscreen
 echo "dist/grumpyscreen-ff.tar.gz"

@@ -20,4 +20,6 @@ fi
 echo "grumpyscreen: touch $LVGL_EVDEV_DEV"
 
 export LVGL_EVDEV_DEV
-exec "$DIR/grumpyscreen"
+# grumpyscreen needs a valid working directory (it reads the current path)
+cd "$DIR" || exit 1
+exec ./grumpyscreen
