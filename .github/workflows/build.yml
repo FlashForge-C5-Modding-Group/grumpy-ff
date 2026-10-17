@@ -8,6 +8,10 @@ on:
       tag:
         description: pellcorp release tag (empty = latest)
         required: false
+      force:
+        description: rebuild and replace the release if it already exists
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -29,8 +33,13 @@ jobs:
           [ -n "$tag" ] || tag=$(gh api repos/pellcorp/grumpyscreen/releases/latest --jq .tag_name)
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
           if gh release view "$tag-ff" -R "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
-            echo "$tag-ff already released"
-            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+            if [ "${{ inputs.force }}" = true ]; then
+              echo "$tag-ff already released, force: rebuilding"
+            else
+              echo "$tag-ff already released"
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       - if: steps.pick.outputs.skip != 'true'
@@ -78,6 +87,10 @@ jobs:
         name: release
         run: |
           tag="${{ steps.pick.outputs.tag }}"
+          # force rebuild: replace the old release and its tag (only reached after a clean build)
+          if [ "${{ steps.pick.outputs.exists }}" = true ]; then
+            gh release delete "$tag-ff" --cleanup-tag --yes
+          fi
           gh release create "$tag-ff" dist/grumpyscreen-ff.tar.gz \
             --title "$tag-ff" \
             --notes "pellcorp/grumpyscreen $tag ($(cut -d' ' -f2 dist/grumpyscreen/VERSION)) built for FlashForge: static, mips32r2, NaN2008, FP64, touch calibration on."
