@@ -1,0 +1,600 @@
+building pellcorp/grumpyscreen v2.0.0-323 (395c1d9b78930bbd3272b91aa0883cdebd177805)
+make -C wpa_supplicant/wpa_supplicant clean
+make[1]: Entering directory '/src/wpa_supplicant/wpa_supplicant'
+make -C ../src clean
+make[2]: Entering directory '/src/wpa_supplicant/src'
+for d in ap common crypto drivers eapol_auth eapol_supp eap_common eap_peer eap_server l2_packet p2p pae radius rsn_supp tls utils wps fst; do [ -d $d ] && make -C $d clean; done
+make[3]: Entering directory '/src/wpa_supplicant/src/ap'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libap.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/ap'
+make[3]: Entering directory '/src/wpa_supplicant/src/common'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libcommon.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/common'
+make[3]: Entering directory '/src/wpa_supplicant/src/crypto'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libcrypto.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/crypto'
+make[3]: Entering directory '/src/wpa_supplicant/src/drivers'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov
+rm -f build.wpa_supplicant build.hostapd
+make[3]: Leaving directory '/src/wpa_supplicant/src/drivers'
+make[3]: Entering directory '/src/wpa_supplicant/src/eapol_auth'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeapol_auth.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/eapol_auth'
+make[3]: Entering directory '/src/wpa_supplicant/src/eapol_supp'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeapol_supp.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/eapol_supp'
+make[3]: Entering directory '/src/wpa_supplicant/src/eap_common'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeap_common.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/eap_common'
+make[3]: Entering directory '/src/wpa_supplicant/src/eap_peer'
+rm -f *~ *.o *.so *.d *.gcno *.gcda *.gcov libeap_peer.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/eap_peer'
+make[3]: Entering directory '/src/wpa_supplicant/src/eap_server'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libeap_server.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/eap_server'
+make[3]: Entering directory '/src/wpa_supplicant/src/l2_packet'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libl2_packet.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/l2_packet'
+make[3]: Entering directory '/src/wpa_supplicant/src/p2p'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libp2p.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/p2p'
+make[3]: Entering directory '/src/wpa_supplicant/src/pae'
+rm -f *~ *.o *.d
+make[3]: Leaving directory '/src/wpa_supplicant/src/pae'
+make[3]: Entering directory '/src/wpa_supplicant/src/radius'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libradius.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/radius'
+make[3]: Entering directory '/src/wpa_supplicant/src/rsn_supp'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov librsn_supp.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/rsn_supp'
+make[3]: Entering directory '/src/wpa_supplicant/src/tls'
+rm -f *~ *.o *.d libtls.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/tls'
+make[3]: Entering directory '/src/wpa_supplicant/src/utils'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libutils.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/utils'
+make[3]: Entering directory '/src/wpa_supplicant/src/wps'
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov libwps.a
+make[3]: Leaving directory '/src/wpa_supplicant/src/wps'
+make[3]: Entering directory '/src/wpa_supplicant/src/fst'
+rm -f *~ *.o *.d
+make[3]: Leaving directory '/src/wpa_supplicant/src/fst'
+rm -f *~
+make[2]: Leaving directory '/src/wpa_supplicant/src'
+make -C dbus clean
+make[2]: Entering directory '/src/wpa_supplicant/wpa_supplicant/dbus'
+make[2]: pkg-config: No such file or directory
+make[2]: pkg-config: No such file or directory
+rm -f *~ *.o *.d *.gcno *.gcda *.gcov
+rm -f libwpadbus.a
+make[2]: Leaving directory '/src/wpa_supplicant/wpa_supplicant/dbus'
+rm -f core *~ *.o *.d *.gcno *.gcda *.gcov
+rm -f eap_*.so wpa_supplicant wpa_cli wpa_passphrase systemd/wpa_supplicant.service systemd/wpa_supplicant@.service systemd/wpa_supplicant-nl80211@.service systemd/wpa_supplicant-wired@.service dbus/fi.w1.wpa_supplicant1.service wpa_supplicant.exe wpa_cli.exe wpa_passphrase.exe win_if_list.exe eapol_test preauth_test
+rm -f wpa_priv
+rm -f nfc_pw_token
+rm -f lcov.info
+rm -rf lcov-html
+rm -f libwpa_client.a
+rm -f libwpa_client.so
+rm -f libwpa_test1 libwpa_test2
+make[1]: Leaving directory '/src/wpa_supplicant/wpa_supplicant'
+make -C wpa_supplicant/wpa_supplicant -j$(nproc) libwpa_client.a
+make[1]: Entering directory '/src/wpa_supplicant/wpa_supplicant'
+  CC  ../src/common/wpa_ctrl.c
+  CC  ../src/utils/os_unix.c
+  CC  ../src/utils/wpa_debug.c
+  CC  ../src/utils/common.c
+  AR  libwpa_client.a
+make[1]: Leaving directory '/src/wpa_supplicant/wpa_supplicant'
+make -C libhv clean
+make[1]: Entering directory '/src/libhv'
+make -f Makefile.in clean SRCDIRS=". base ssl event event/kcp util cpputil evpp protocol http http/client http/server mqtt"
+make[2]: Entering directory '/src/libhv'
+mipsel-linux-musl-gcc (GCC) 12.4.0
+OS   = Linux
+ARCH = mipsel
+MAKE = make
+CC   = mipsel-linux-musl-gcc
+CXX  = mipsel-linux-musl-g++
+CFLAGS   = -O2 -fPIC -std=c99
+CXXFLAGS = -O2 -fPIC -std=c++11
+CPPFLAGS = -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Ievent/kcp -Iutil -Icpputil -Ievpp -Iprotocol -Ihttp -Ihttp/client -Ihttp/server -Imqtt
+LDFLAGS  = -Llib -L3rd/lib -L3rd/lib/mipsel-linux-musl  -lstdc++ -lpthread -lm -ldl -lrt
+TARGET           = test
+TARGET_TYPE      = EXECUTABLE
+TARGET_PLATFORM  = mipsel-linux-musl
+BUILD_TYPE       = RELEASE
+SRCS=base/hbase.c base/herr.c base/hlog.c base/hmain.c base/hsocket.c base/htime.c base/hversion.c base/rbtree.c ssl/appletls.c ssl/gnutls.c ssl/hssl.c ssl/mbedtls.c ssl/nossl.c ssl/openssl.c ssl/wintls.c event/epoll.c event/evport.c event/hevent.c event/hloop.c event/iocp.c event/kqueue.c event/nio.c event/nlog.c event/noevent.c event/overlapio.c event/poll.c event/rudp.c event/select.c event/unpack.c event/kcp/hkcp.c event/kcp/ikcp.c util/base64.c util/md5.c util/sha1.c cpputil/RAII.cpp cpputil/ThreadLocalStorage.cpp cpputil/hasync.cpp cpputil/hdir.cpp cpputil/hpath.cpp cpputil/hstring.cpp cpputil/hurl.cpp cpputil/ifconfig.cpp cpputil/iniparser.cpp protocol/dns.c protocol/ftp.c protocol/icmp.c protocol/smtp.c http/http_parser.c http/httpdef.c http/multipart_parser.c http/websocket_parser.c http/wsdef.c http/Http1Parser.cpp http/Http2Parser.cpp http/HttpMessage.cpp http/HttpParser.cpp http/WebSocketChannel.cpp http/WebSocketParser.cpp http/http_content.cpp http/client/AsyncHttpClient.cpp http/client/HttpClient.cpp http/client/WebSocketClient.cpp http/server/FileCache.cpp http/server/HttpHandler.cpp http/server/HttpMiddleware.cpp http/server/HttpResponseWriter.cpp http/server/HttpServer.cpp http/server/HttpService.cpp http/server/http_page.cpp mqtt/mqtt_client.c mqtt/mqtt_protocol.c
+OBJS=base/hbase.o base/herr.o base/hlog.o base/hmain.o base/hsocket.o base/htime.o base/hversion.o base/rbtree.o ssl/appletls.o ssl/gnutls.o ssl/hssl.o ssl/mbedtls.o ssl/nossl.o ssl/openssl.o ssl/wintls.o event/epoll.o event/evport.o event/hevent.o event/hloop.o event/iocp.o event/kqueue.o event/nio.o event/nlog.o event/noevent.o event/overlapio.o event/poll.o event/rudp.o event/select.o event/unpack.o event/kcp/hkcp.o event/kcp/ikcp.o util/base64.o util/md5.o util/sha1.o cpputil/RAII.o cpputil/ThreadLocalStorage.o cpputil/hasync.o cpputil/hdir.o cpputil/hpath.o cpputil/hstring.o cpputil/hurl.o cpputil/ifconfig.o cpputil/iniparser.o protocol/dns.o protocol/ftp.o protocol/icmp.o protocol/smtp.o http/http_parser.o http/httpdef.o http/multipart_parser.o http/websocket_parser.o http/wsdef.o http/Http1Parser.o http/Http2Parser.o http/HttpMessage.o http/HttpParser.o http/WebSocketChannel.o http/WebSocketParser.o http/http_content.o http/client/AsyncHttpClient.o http/client/HttpClient.o http/client/WebSocketClient.o http/server/FileCache.o http/server/HttpHandler.o http/server/HttpMiddleware.o http/server/HttpResponseWriter.o http/server/HttpServer.o http/server/HttpService.o http/server/http_page.o mqtt/mqtt_client.o mqtt/mqtt_protocol.o
+rm -r 2>/dev/null base/hbase.o base/herr.o base/hlog.o base/hmain.o base/hsocket.o base/htime.o base/hversion.o base/rbtree.o ssl/appletls.o ssl/gnutls.o ssl/hssl.o ssl/mbedtls.o ssl/nossl.o ssl/openssl.o ssl/wintls.o event/epoll.o event/evport.o event/hevent.o event/hloop.o event/iocp.o event/kqueue.o event/nio.o event/nlog.o event/noevent.o event/overlapio.o event/poll.o event/rudp.o event/select.o event/unpack.o event/kcp/hkcp.o event/kcp/ikcp.o util/base64.o util/md5.o util/sha1.o cpputil/RAII.o cpputil/ThreadLocalStorage.o cpputil/hasync.o cpputil/hdir.o cpputil/hpath.o cpputil/hstring.o cpputil/hurl.o cpputil/ifconfig.o cpputil/iniparser.o protocol/dns.o protocol/ftp.o protocol/icmp.o protocol/smtp.o http/http_parser.o http/httpdef.o http/multipart_parser.o http/websocket_parser.o http/wsdef.o http/Http1Parser.o http/Http2Parser.o http/HttpMessage.o http/HttpParser.o http/WebSocketChannel.o http/WebSocketParser.o http/http_content.o http/client/AsyncHttpClient.o http/client/HttpClient.o http/client/WebSocketClient.o http/server/FileCache.o http/server/HttpHandler.o http/server/HttpMiddleware.o http/server/HttpResponseWriter.o http/server/HttpServer.o http/server/HttpService.o http/server/http_page.o mqtt/mqtt_client.o mqtt/mqtt_protocol.o
+make[2]: [Makefile.in:284: clean] Error 1 (ignored)
+#-rm -r 2>/dev/null lib
+#-rm -r 2>/dev/null bin
+make[2]: Leaving directory '/src/libhv'
+rm -r 2>/dev/null examples/*.o examples/*/*.o
+make[1]: [Makefile:78: clean] Error 1 (ignored)
+rm -r 2>/dev/null include/hv
+make[1]: [Makefile:79: clean] Error 1 (ignored)
+make clean done.
+make[1]: Leaving directory '/src/libhv'
+make -C libhv -j$(nproc) libhv
+make[1]: Entering directory '/src/libhv'
+mkdir -p 2>/dev/null lib
+make -f Makefile.in TARGET=libhv TARGET_TYPE="SHARED|STATIC" SRCDIRS=". base ssl event util cpputil evpp http http/server http/client"
+make[2]: Entering directory '/src/libhv'
+make[2]: warning: jobserver unavailable: using -j1.  Add '+' to parent make rule.
+mipsel-linux-musl-gcc (GCC) 12.4.0
+OS   = Linux
+ARCH = mipsel
+MAKE = make
+CC   = mipsel-linux-musl-gcc
+CXX  = mipsel-linux-musl-g++
+CFLAGS   = -O2 -fPIC -std=c99
+CXXFLAGS = -O2 -fPIC -std=c++11
+CPPFLAGS = -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client
+LDFLAGS  = -Llib -L3rd/lib -L3rd/lib/mipsel-linux-musl  -lstdc++ -lpthread -lm -ldl -lrt
+TARGET           = libhv
+TARGET_TYPE      = SHARED|STATIC
+TARGET_PLATFORM  = mipsel-linux-musl
+BUILD_TYPE       = RELEASE
+SRCS=base/hbase.c base/herr.c base/hlog.c base/hmain.c base/hsocket.c base/htime.c base/hversion.c base/rbtree.c ssl/appletls.c ssl/gnutls.c ssl/hssl.c ssl/mbedtls.c ssl/nossl.c ssl/openssl.c ssl/wintls.c event/epoll.c event/evport.c event/hevent.c event/hloop.c event/iocp.c event/kqueue.c event/nio.c event/nlog.c event/noevent.c event/overlapio.c event/poll.c event/rudp.c event/select.c event/unpack.c util/base64.c util/md5.c util/sha1.c cpputil/RAII.cpp cpputil/ThreadLocalStorage.cpp cpputil/hasync.cpp cpputil/hdir.cpp cpputil/hpath.cpp cpputil/hstring.cpp cpputil/hurl.cpp cpputil/ifconfig.cpp cpputil/iniparser.cpp http/http_parser.c http/httpdef.c http/multipart_parser.c http/websocket_parser.c http/wsdef.c http/Http1Parser.cpp http/Http2Parser.cpp http/HttpMessage.cpp http/HttpParser.cpp http/WebSocketChannel.cpp http/WebSocketParser.cpp http/http_content.cpp http/server/FileCache.cpp http/server/HttpHandler.cpp http/server/HttpMiddleware.cpp http/server/HttpResponseWriter.cpp http/server/HttpServer.cpp http/server/HttpService.cpp http/server/http_page.cpp http/client/AsyncHttpClient.cpp http/client/HttpClient.cpp http/client/WebSocketClient.cpp
+OBJS=base/hbase.o base/herr.o base/hlog.o base/hmain.o base/hsocket.o base/htime.o base/hversion.o base/rbtree.o ssl/appletls.o ssl/gnutls.o ssl/hssl.o ssl/mbedtls.o ssl/nossl.o ssl/openssl.o ssl/wintls.o event/epoll.o event/evport.o event/hevent.o event/hloop.o event/iocp.o event/kqueue.o event/nio.o event/nlog.o event/noevent.o event/overlapio.o event/poll.o event/rudp.o event/select.o event/unpack.o util/base64.o util/md5.o util/sha1.o cpputil/RAII.o cpputil/ThreadLocalStorage.o cpputil/hasync.o cpputil/hdir.o cpputil/hpath.o cpputil/hstring.o cpputil/hurl.o cpputil/ifconfig.o cpputil/iniparser.o http/http_parser.o http/httpdef.o http/multipart_parser.o http/websocket_parser.o http/wsdef.o http/Http1Parser.o http/Http2Parser.o http/HttpMessage.o http/HttpParser.o http/WebSocketChannel.o http/WebSocketParser.o http/http_content.o http/server/FileCache.o http/server/HttpHandler.o http/server/HttpMiddleware.o http/server/HttpResponseWriter.o http/server/HttpServer.o http/server/HttpService.o http/server/http_page.o http/client/AsyncHttpClient.o http/client/HttpClient.o http/client/WebSocketClient.o
+mkdir -p 2>/dev/null bin lib
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o base/hbase.o base/hbase.c
+base/hbase.c: In function 'hv_parse_size':
+base/hbase.c:406:35: warning: left shift count >= width of type [-Wshift-count-overflow]
+  406 |             case 'T': case 't': n <<= 40; break;
+      |                                   ^~~
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o base/herr.o base/herr.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o base/hlog.o base/hlog.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o base/hmain.o base/hmain.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o base/hsocket.o base/hsocket.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o base/htime.o base/htime.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o base/hversion.o base/hversion.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o base/rbtree.o base/rbtree.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o ssl/appletls.o ssl/appletls.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o ssl/gnutls.o ssl/gnutls.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o ssl/hssl.o ssl/hssl.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o ssl/mbedtls.o ssl/mbedtls.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o ssl/nossl.o ssl/nossl.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o ssl/openssl.o ssl/openssl.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o ssl/wintls.o ssl/wintls.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/epoll.o event/epoll.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/evport.o event/evport.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/hevent.o event/hevent.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/hloop.o event/hloop.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/iocp.o event/iocp.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/kqueue.o event/kqueue.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/nio.o event/nio.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/nlog.o event/nlog.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/noevent.o event/noevent.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/overlapio.o event/overlapio.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/poll.o event/poll.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/rudp.o event/rudp.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/select.o event/select.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o event/unpack.o event/unpack.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o util/base64.o util/base64.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o util/md5.o util/md5.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o util/sha1.o util/sha1.c
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o cpputil/RAII.o cpputil/RAII.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o cpputil/ThreadLocalStorage.o cpputil/ThreadLocalStorage.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o cpputil/hasync.o cpputil/hasync.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o cpputil/hdir.o cpputil/hdir.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o cpputil/hpath.o cpputil/hpath.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o cpputil/hstring.o cpputil/hstring.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o cpputil/hurl.o cpputil/hurl.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o cpputil/ifconfig.o cpputil/ifconfig.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o cpputil/iniparser.o cpputil/iniparser.cpp
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/http_parser.o http/http_parser.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/httpdef.o http/httpdef.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/multipart_parser.o http/multipart_parser.c
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/websocket_parser.o http/websocket_parser.c
+http/websocket_parser.c: In function 'websocket_build_frame':
+http/websocket_parser.c:228:38: warning: right shift count >= width of type [-Wshift-count-overflow]
+  228 |         frame[2] = (char) ((data_len >> 56) & 0xFF);
+      |                                      ^~
+http/websocket_parser.c:229:38: warning: right shift count >= width of type [-Wshift-count-overflow]
+  229 |         frame[3] = (char) ((data_len >> 48) & 0xFF);
+      |                                      ^~
+http/websocket_parser.c:230:38: warning: right shift count >= width of type [-Wshift-count-overflow]
+  230 |         frame[4] = (char) ((data_len >> 40) & 0xFF);
+      |                                      ^~
+http/websocket_parser.c:231:38: warning: right shift count >= width of type [-Wshift-count-overflow]
+  231 |         frame[5] = (char) ((data_len >> 32) & 0xFF);
+      |                                      ^~
+mipsel-linux-musl-gcc -O2 -fPIC -std=c99 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/wsdef.o http/wsdef.c
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/Http1Parser.o http/Http1Parser.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/Http2Parser.o http/Http2Parser.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/HttpMessage.o http/HttpMessage.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/HttpParser.o http/HttpParser.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/WebSocketChannel.o http/WebSocketChannel.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/WebSocketParser.o http/WebSocketParser.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/http_content.o http/http_content.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/server/FileCache.o http/server/FileCache.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/server/HttpHandler.o http/server/HttpHandler.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/server/HttpMiddleware.o http/server/HttpMiddleware.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/server/HttpResponseWriter.o http/server/HttpResponseWriter.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/server/HttpServer.o http/server/HttpServer.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/server/HttpService.o http/server/HttpService.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/server/http_page.o http/server/http_page.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/client/AsyncHttpClient.o http/client/AsyncHttpClient.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/client/HttpClient.o http/client/HttpClient.cpp
+mipsel-linux-musl-g++ -O2 -fPIC -std=c++11 -DNDEBUG  -Iinclude -I3rd -I3rd/include -I. -Ibase -Issl -Ievent -Iutil -Icpputil -Ievpp -Ihttp -Ihttp/server -Ihttp/client  -c -o http/client/WebSocketClient.o http/client/WebSocketClient.cpp
+mipsel-linux-musl-g++ -shared base/hbase.o base/herr.o base/hlog.o base/hmain.o base/hsocket.o base/htime.o base/hversion.o base/rbtree.o ssl/appletls.o ssl/gnutls.o ssl/hssl.o ssl/mbedtls.o ssl/nossl.o ssl/openssl.o ssl/wintls.o event/epoll.o event/evport.o event/hevent.o event/hloop.o event/iocp.o event/kqueue.o event/nio.o event/nlog.o event/noevent.o event/overlapio.o event/poll.o event/rudp.o event/select.o event/unpack.o util/base64.o util/md5.o util/sha1.o cpputil/RAII.o cpputil/ThreadLocalStorage.o cpputil/hasync.o cpputil/hdir.o cpputil/hpath.o cpputil/hstring.o cpputil/hurl.o cpputil/ifconfig.o cpputil/iniparser.o http/http_parser.o http/httpdef.o http/multipart_parser.o http/websocket_parser.o http/wsdef.o http/Http1Parser.o http/Http2Parser.o http/HttpMessage.o http/HttpParser.o http/WebSocketChannel.o http/WebSocketParser.o http/http_content.o http/server/FileCache.o http/server/HttpHandler.o http/server/HttpMiddleware.o http/server/HttpResponseWriter.o http/server/HttpServer.o http/server/HttpService.o http/server/http_page.o http/client/AsyncHttpClient.o http/client/HttpClient.o http/client/WebSocketClient.o -o lib/libhv.so -Llib -L3rd/lib -L3rd/lib/mipsel-linux-musl  -lstdc++ -lpthread -lm -ldl -lrt
+mipsel-linux-musl-ar rv lib/libhv.a base/hbase.o base/herr.o base/hlog.o base/hmain.o base/hsocket.o base/htime.o base/hversion.o base/rbtree.o ssl/appletls.o ssl/gnutls.o ssl/hssl.o ssl/mbedtls.o ssl/nossl.o ssl/openssl.o ssl/wintls.o event/epoll.o event/evport.o event/hevent.o event/hloop.o event/iocp.o event/kqueue.o event/nio.o event/nlog.o event/noevent.o event/overlapio.o event/poll.o event/rudp.o event/select.o event/unpack.o util/base64.o util/md5.o util/sha1.o cpputil/RAII.o cpputil/ThreadLocalStorage.o cpputil/hasync.o cpputil/hdir.o cpputil/hpath.o cpputil/hstring.o cpputil/hurl.o cpputil/ifconfig.o cpputil/iniparser.o http/http_parser.o http/httpdef.o http/multipart_parser.o http/websocket_parser.o http/wsdef.o http/Http1Parser.o http/Http2Parser.o http/HttpMessage.o http/HttpParser.o http/WebSocketChannel.o http/WebSocketParser.o http/http_content.o http/server/FileCache.o http/server/HttpHandler.o http/server/HttpMiddleware.o http/server/HttpResponseWriter.o http/server/HttpServer.o http/server/HttpService.o http/server/http_page.o http/client/AsyncHttpClient.o http/client/HttpClient.o http/client/WebSocketClient.o
+mipsel-linux-musl-ar: creating lib/libhv.a
+a - base/hbase.o
+a - base/herr.o
+a - base/hlog.o
+a - base/hmain.o
+a - base/hsocket.o
+a - base/htime.o
+a - base/hversion.o
+a - base/rbtree.o
+a - ssl/appletls.o
+a - ssl/gnutls.o
+a - ssl/hssl.o
+a - ssl/mbedtls.o
+a - ssl/nossl.o
+a - ssl/openssl.o
+a - ssl/wintls.o
+a - event/epoll.o
+a - event/evport.o
+a - event/hevent.o
+a - event/hloop.o
+a - event/iocp.o
+a - event/kqueue.o
+a - event/nio.o
+a - event/nlog.o
+a - event/noevent.o
+a - event/overlapio.o
+a - event/poll.o
+a - event/rudp.o
+a - event/select.o
+a - event/unpack.o
+a - util/base64.o
+a - util/md5.o
+a - util/sha1.o
+a - cpputil/RAII.o
+a - cpputil/ThreadLocalStorage.o
+a - cpputil/hasync.o
+a - cpputil/hdir.o
+a - cpputil/hpath.o
+a - cpputil/hstring.o
+a - cpputil/hurl.o
+a - cpputil/ifconfig.o
+a - cpputil/iniparser.o
+a - http/http_parser.o
+a - http/httpdef.o
+a - http/multipart_parser.o
+a - http/websocket_parser.o
+a - http/wsdef.o
+a - http/Http1Parser.o
+a - http/Http2Parser.o
+a - http/HttpMessage.o
+a - http/HttpParser.o
+a - http/WebSocketChannel.o
+a - http/WebSocketParser.o
+a - http/http_content.o
+a - http/server/FileCache.o
+a - http/server/HttpHandler.o
+a - http/server/HttpMiddleware.o
+a - http/server/HttpResponseWriter.o
+a - http/server/HttpServer.o
+a - http/server/HttpService.o
+a - http/server/http_page.o
+a - http/client/AsyncHttpClient.o
+a - http/client/HttpClient.o
+a - http/client/WebSocketClient.o
+make[2]: Leaving directory '/src/libhv'
+mkdir -p 2>/dev/null include/hv
+cp -r 2>/dev/null hv.h hconfig.h hexport.h base/hplatform.h base/hdef.h base/hatomic.h base/herr.h base/htime.h base/hmath.h base/hbase.h base/hversion.h base/hsysinfo.h base/hproc.h base/hthread.h base/hmutex.h base/hsocket.h base/hlog.h base/hbuf.h base/hmain.h base/hendian.h  ssl/hssl.h event/hloop.h event/nlog.h  util/base64.h util/md5.h util/sha1.h  cpputil/hmap.h cpputil/hstring.h cpputil/hfile.h cpputil/hpath.h cpputil/hdir.h cpputil/hurl.h cpputil/hscope.h cpputil/hthreadpool.h cpputil/hasync.h cpputil/hobjectpool.h cpputil/ifconfig.h cpputil/iniparser.h cpputil/json.hpp cpputil/singleton.h cpputil/ThreadLocalStorage.h  evpp/Buffer.h evpp/Channel.h evpp/Event.h evpp/EventLoop.h evpp/EventLoopThread.h evpp/EventLoopThreadPool.h evpp/Status.h evpp/TcpClient.h evpp/TcpServer.h evpp/UdpClient.h evpp/UdpServer.h  http/httpdef.h http/wsdef.h http/http_content.h http/HttpMessage.h http/HttpParser.h http/WebSocketParser.h http/WebSocketChannel.h  http/server/HttpServer.h http/server/HttpService.h http/server/HttpContext.h http/server/HttpResponseWriter.h http/server/WebSocketServer.h  http/client/HttpClient.h http/client/requests.h http/client/axios.h http/client/AsyncHttpClient.h http/client/WebSocketClient.h  include/hv
+make libhv done.
+make[1]: Leaving directory '/src/libhv'
+CC ./lvgl/src/core/lv_disp.c
+CC ./lvgl/src/core/lv_group.c
+CC ./lvgl/src/core/lv_indev_scroll.c
+CC ./lvgl/src/core/lv_obj_class.c
+CC ./lvgl/src/core/lv_obj_draw.c
+CC ./lvgl/src/core/lv_indev.c
+CC ./lvgl/src/core/lv_obj.c
+CC ./lvgl/src/core/lv_obj_style_gen.c
+CC ./lvgl/src/core/lv_obj_scroll.c
+CC ./lvgl/src/core/lv_obj_style.c
+CC ./lvgl/src/core/lv_obj_tree.c
+CC ./lvgl/src/core/lv_obj_pos.c
+CC ./lvgl/src/core/lv_theme.c
+CC ./lvgl/src/draw/lv_draw_arc.c
+CC ./lvgl/src/draw/lv_draw.c
+CC ./lvgl/src/core/lv_event.c
+CC ./lvgl/src/draw/lv_draw_img.c
+CC ./lvgl/src/draw/lv_draw_line.c
+CC ./lvgl/src/draw/lv_draw_rect.c
+CC ./lvgl/src/draw/lv_draw_label.c
+CC ./lvgl/src/draw/lv_draw_transform.c
+CC ./lvgl/src/draw/lv_draw_triangle.c
+CC ./lvgl/src/core/lv_refr.c
+CC ./lvgl/src/draw/lv_draw_layer.c
+CC ./lvgl/src/draw/lv_img_cache.c
+CC ./lvgl/src/draw/arm2d/lv_gpu_arm2d.c
+CC ./lvgl/src/draw/lv_img_buf.c
+CC ./lvgl/src/draw/nxp/pxp/lv_draw_pxp.c
+CC ./lvgl/src/draw/nxp/pxp/lv_draw_pxp_blend.c
+CC ./lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c
+CC ./lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c
+CC ./lvgl/src/draw/nxp/vglite/lv_draw_vglite.c
+CC ./lvgl/src/draw/nxp/vglite/lv_draw_vglite_arc.c
+CC ./lvgl/src/draw/lv_img_decoder.c
+CC ./lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.c
+CC ./lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.c
+CC ./lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.c
+CC ./lvgl/src/draw/nxp/vglite/lv_vglite_buf.c
+CC ./lvgl/src/draw/nxp/vglite/lv_vglite_utils.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl_arc.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl_bg.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl_composite.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl_img.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl_label.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl_line.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl_mask.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl_polygon.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl_rect.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl_stack_blur.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl_utils.c
+CC ./lvgl/src/draw/sdl/lv_draw_sdl_layer.c
+CC ./lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c
+CC ./lvgl/src/draw/sw/lv_draw_sw.c
+CC ./lvgl/src/draw/lv_draw_mask.c
+CC ./lvgl/src/draw/sw/lv_draw_sw_dither.c
+CC ./lvgl/src/draw/sw/lv_draw_sw_gradient.c
+CC ./lvgl/src/draw/sw/lv_draw_sw_img.c
+CC ./lvgl/src/draw/sw/lv_draw_sw_arc.c
+CC ./lvgl/src/draw/sw/lv_draw_sw_letter.c
+CC ./lvgl/src/draw/sw/lv_draw_sw_polygon.c
+CC ./lvgl/src/draw/sw/lv_draw_sw_line.c
+CC ./lvgl/src/draw/sw/lv_draw_sw_layer.c
+CC ./lvgl/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c
+CC ./lvgl/src/draw/sw/lv_draw_sw_blend.c
+CC ./lvgl/src/draw/sw/lv_draw_sw_transform.c
+CC lvgl/src/extra/lv_extra.c
+CC lvgl/src/extra/themes/basic/lv_theme_basic.c
+CC lvgl/src/extra/layouts/grid/lv_grid.c
+CC lvgl/src/extra/layouts/flex/lv_flex.c
+CC ./lvgl/src/draw/sw/lv_draw_sw_rect.c
+CC lvgl/src/extra/others/msg/lv_msg.c
+CC lvgl/src/extra/others/gridnav/lv_gridnav.c
+CC lvgl/src/extra/others/fragment/lv_fragment.c
+CC lvgl/src/extra/others/fragment/lv_fragment_manager.c
+CC lvgl/src/extra/others/imgfont/lv_imgfont.c
+CC lvgl/src/extra/others/snapshot/lv_snapshot.c
+CC lvgl/src/extra/others/ime/lv_ime_pinyin.c
+CC lvgl/src/extra/themes/mono/lv_theme_mono.c
+CC lvgl/src/extra/others/monkey/lv_monkey.c
+CC lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.c
+CC lvgl/src/extra/libs/gif/gifdec.c
+CC lvgl/src/extra/libs/freetype/lv_freetype.c
+CC lvgl/src/extra/libs/sjpg/tjpgd.c
+CC lvgl/src/extra/libs/gif/lv_gif.c
+CC lvgl/src/extra/libs/sjpg/lv_sjpg.c
+CC lvgl/src/extra/libs/qrcode/lv_qrcode.c
+CC lvgl/src/extra/libs/png/lv_png.c
+CC lvgl/src/extra/libs/bmp/lv_bmp.c
+CC lvgl/src/extra/libs/tiny_ttf/lv_tiny_ttf.c
+CC lvgl/src/extra/libs/fsdrv/lv_fs_littlefs.c
+CC lvgl/src/extra/libs/fsdrv/lv_fs_win32.c
+CC lvgl/src/extra/libs/fsdrv/lv_fs_stdio.c
+CC lvgl/src/extra/libs/fsdrv/lv_fs_fatfs.c
+CC lvgl/src/extra/libs/fsdrv/lv_fs_posix.c
+CC lvgl/src/extra/libs/rlottie/lv_rlottie.c
+CC lvgl/src/extra/themes/default/lv_theme_default.c
+CC lvgl/src/extra/widgets/spinbox/lv_spinbox.c
+CC lvgl/src/extra/libs/qrcode/qrcodegen.c
+CC lvgl/src/extra/widgets/meter/lv_meter.c
+CC lvgl/src/extra/widgets/led/lv_led.c
+CC lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.c
+CC lvgl/src/extra/widgets/span/lv_span.c
+CC lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.c
+CC lvgl/src/extra/widgets/msgbox/lv_msgbox.c
+CC lvgl/src/extra/widgets/calendar/lv_calendar.c
+CC lvgl/src/extra/widgets/animimg/lv_animimg.c
+CC lvgl/src/extra/widgets/imgbtn/lv_imgbtn.c
+CC lvgl/src/extra/widgets/list/lv_list.c
+CC lvgl/src/extra/widgets/colorwheel/lv_colorwheel.c
+CC lvgl/src/extra/widgets/menu/lv_menu.c
+CC lvgl/src/extra/widgets/spinner/lv_spinner.c
+CC lvgl/src/extra/widgets/keyboard/lv_keyboard.c
+CC lvgl/src/extra/widgets/win/lv_win.c
+CC lvgl/src/extra/widgets/tileview/lv_tileview.c
+CC ./lvgl/src/font/lv_font.c
+CC lvgl/src/extra/widgets/tabview/lv_tabview.c
+CC ./lvgl/src/font/lv_font_loader.c
+CC ./lvgl/src/font/lv_font_dejavu_16_persian_hebrew.c
+CC lvgl/src/extra/widgets/chart/lv_chart.c
+CC ./lvgl/src/font/lv_font_montserrat_8.c
+CC ./lvgl/src/font/lv_font_montserrat_10.c
+CC ./lvgl/src/font/lv_font_fmt_txt.c
+CC ./lvgl/src/font/lv_font_montserrat_12.c
+CC ./lvgl/src/font/lv_font_montserrat_12_subpx.c
+CC ./lvgl/src/font/lv_font_montserrat_14.c
+CC ./lvgl/src/font/lv_font_montserrat_16.c
+CC ./lvgl/src/font/lv_font_montserrat_18.c
+CC ./lvgl/src/font/lv_font_montserrat_20.c
+CC ./lvgl/src/font/lv_font_montserrat_22.c
+CC ./lvgl/src/font/lv_font_montserrat_24.c
+CC ./lvgl/src/font/lv_font_montserrat_26.c
+CC ./lvgl/src/font/lv_font_montserrat_28_compressed.c
+CC ./lvgl/src/font/lv_font_montserrat_30.c
+CC ./lvgl/src/font/lv_font_montserrat_28.c
+CC ./lvgl/src/font/lv_font_montserrat_32.c
+CC ./lvgl/src/font/lv_font_montserrat_34.c
+CC ./lvgl/src/font/lv_font_montserrat_36.c
+CC ./lvgl/src/font/lv_font_montserrat_38.c
+CC ./lvgl/src/font/lv_font_montserrat_40.c
+CC ./lvgl/src/font/lv_font_montserrat_42.c
+CC ./lvgl/src/font/lv_font_montserrat_44.c
+CC ./lvgl/src/font/lv_font_montserrat_46.c
+CC ./lvgl/src/font/lv_font_montserrat_48.c
+CC ./lvgl/src/font/lv_font_unscii_8.c
+CC ./lvgl/src/font/lv_font_simsun_16_cjk.c
+CC ./lvgl/src/font/lv_font_unscii_16.c
+CC ./lvgl/src/hal/lv_hal_tick.c
+CC ./lvgl/src/hal/lv_hal_indev.c
+CC ./lvgl/src/misc/lv_anim_timeline.c
+CC ./lvgl/src/misc/lv_anim.c
+CC ./lvgl/src/hal/lv_hal_disp.c
+CC ./lvgl/src/misc/lv_bidi.c
+CC ./lvgl/src/misc/lv_async.c
+CC ./lvgl/src/misc/lv_area.c
+CC ./lvgl/src/misc/lv_color.c
+CC ./lvgl/src/misc/lv_gc.c
+CC ./lvgl/src/misc/lv_log.c
+CC ./lvgl/src/misc/lv_fs.c
+CC ./lvgl/src/misc/lv_ll.c
+CC ./lvgl/src/misc/lv_math.c
+CC ./lvgl/src/misc/lv_lru.c
+CC ./lvgl/src/misc/lv_style.c
+CC ./lvgl/src/misc/lv_mem.c
+CC ./lvgl/src/misc/lv_printf.c
+CC ./lvgl/src/misc/lv_tlsf.c
+CC ./lvgl/src/misc/lv_timer.c
+CC ./lvgl/src/misc/lv_txt_ap.c
+CC ./lvgl/src/misc/lv_style_gen.c
+CC ./lvgl/src/misc/lv_utils.c
+CC ./lvgl/src/misc/lv_txt.c
+CC lvgl/src/extra/libs/png/lodepng.c
+CC ./lvgl/src/widgets/lv_btn.c
+CC ./lvgl/src/widgets/lv_bar.c
+CC ./lvgl/src/widgets/lv_checkbox.c
+CC ./lvgl/src/widgets/lv_arc.c
+CC ./lvgl/src/widgets/lv_canvas.c
+CC ./lvgl/src/widgets/lv_btnmatrix.c
+CC ./lvgl/src/widgets/lv_img.c
+CC ./lvgl/src/widgets/lv_dropdown.c
+CC ./lvgl/src/widgets/lv_line.c
+CC ./lvgl/src/widgets/lv_switch.c
+CC ./lvgl/src/widgets/lv_slider.c
+CC ./lvgl/src/widgets/lv_label.c
+CC ./lvgl/src/widgets/lv_roller.c
+CC lv_drivers/win_drv.c
+CC lv_drivers/indev/AD_touch.c
+CC lv_drivers/indev/FT5406EE8.c
+CC lv_drivers/indev/XPT2046.c
+CC lv_drivers/indev/libinput.c
+CC lv_drivers/indev/xkb.c
+CC lv_drivers/gtkdrv/gtkdrv.c
+CC lv_drivers/display/GC9A01.c
+CC lv_drivers/display/ILI9341.c
+CC lv_drivers/indev/evdev.c
+CC lv_drivers/display/R61581.c
+CC lv_drivers/display/SHARP_MIP.c
+CC lv_drivers/display/SSD1963.c
+CC lv_drivers/display/ST7565.c
+CC lv_drivers/display/UC1610.c
+CC lv_drivers/display/drm.c
+CC lv_drivers/sdl/sdl.c
+CC ./lvgl/src/widgets/lv_table.c
+CC lv_drivers/sdl/sdl_gpu.c
+CC lv_drivers/sdl/sdl_common.c
+CC lv_drivers/display/fbdev.c
+CC assets/checker_24.c
+CC ./lvgl/src/widgets/lv_textarea.c
+CC assets/materialdesign_font_40.c
+CC lv_touch_calibration/lv_tc_indicator_img.c
+CC assets/dejavusans_mono_14.c
+CC lv_touch_calibration/lv_tc.c
+CC assets/material/arrow_down.c
+CC lv_touch_calibration/lv_tc_screen.c
+CC assets/material/arrow_left.c
+CC assets/material/arrow_right.c
+CC assets/material/arrow_up.c
+CC assets/material/back.c
+CC assets/material/bed.c
+CC assets/material/cancel.c
+CC assets/material/clock_img.c
+CC assets/material/cooldown_img.c
+CC assets/material/delete_img.c
+CC assets/material/emergency.c
+CC assets/material/extrude.c
+CC assets/material/extrude_img.c
+CC assets/material/extruder.c
+CC assets/material/factory_reset_img.c
+CC assets/material/fan.c
+CC assets/material/fan_off_img.c
+CC assets/material/fan_on.c
+CC assets/material/fine_tune_img.c
+CC assets/material/firmware_img.c
+CC assets/material/flow_up_img.c
+CC assets/material/gui_img.c
+CC assets/material/heater.c
+CC assets/material/home.c
+CC assets/material/home_z.c
+CC assets/material/hourglass.c
+CC assets/material/infinity_img.c
+CC assets/material/info_img.c
+CC assets/material/layers_img.c
+CC assets/material/light_img.c
+CC assets/material/light_off.c
+CC assets/material/load_filament_img.c
+CC assets/material/motor_off_img.c
+CC assets/material/move.c
+CC assets/material/pa_plus_img.c
+CC assets/material/pause_img.c
+CC assets/material/print.c
+CC assets/material/refresh_img.c
+CC assets/material/restart_img.c
+CC assets/material/resume.c
+CC assets/material/retract_img.c
+CC assets/material/sd_img.c
+CC assets/material/shutdown_img.c
+CC assets/material/speed_up_img.c
+CC assets/material/spoolman_img.c
+CC assets/material/support_zip_img.c
+CC assets/material/switch_stock_img.c
+CC assets/material/unload_filament_img.c
+CC assets/material/update_img.c
+CC assets/material/z_closer.c
+CC assets/material/z_farther.c
+CXX src/button_container.cpp
+CXX src/console_panel.cpp
+CXX src/extruder_panel.cpp
+CXX src/exclude_object_panel.cpp
+CXX src/fan_panel.cpp
+CXX src/file_panel.cpp
+CXX src/image_label.cpp
+CXX src/finetune_panel.cpp
+CXX src/homing_panel.cpp
+CXX src/guppyscreen.cpp
+CXX src/init_panel.cpp
+CXX src/macro_panel.cpp
+CXX src/led_panel.cpp
+CXX src/main.cpp
+CXX src/mini_print_status.cpp
+CXX src/net_utils.cpp
+CXX src/notify_consumer.cpp
+CXX src/mmu_tools.cpp
+CXX src/main_panel.cpp
+CXX src/mmu_panel.cpp
+CXX src/numpad.cpp
+CXX src/selector.cpp
+CXX src/prompt_panel.cpp
+CXX src/print_status_panel.cpp
+CXX src/sensor_container.cpp
+CXX src/print_panel.cpp
+CXX src/slider_container.cpp
+CXX src/theme.cpp
+CXX src/setting_panel.cpp
+CXX src/state.cpp
+CXX src/spoolman_panel.cpp
+CXX src/tool_map_panel.cpp
+CXX src/utils.cpp
+CXX src/websocket_client.cpp
+CXX src/wpa_event.cpp
+CXX src/wifi_panel.cpp
+CXX src/afc_backend.cpp
+CXX src/hh_backend.cpp
+mipsel-linux-musl-g++ -o build/ff/bin/grumpyscreen build/ff/obj/lv_disp.o build/ff/obj/lv_group.o build/ff/obj/lv_indev.o build/ff/obj/lv_indev_scroll.o build/ff/obj/lv_obj.o build/ff/obj/lv_obj_class.o build/ff/obj/lv_obj_draw.o build/ff/obj/lv_obj_pos.o build/ff/obj/lv_obj_scroll.o build/ff/obj/lv_obj_style.o build/ff/obj/lv_obj_style_gen.o build/ff/obj/lv_obj_tree.o build/ff/obj/lv_event.o build/ff/obj/lv_refr.o build/ff/obj/lv_theme.o build/ff/obj/lv_draw_arc.o build/ff/obj/lv_draw.o build/ff/obj/lv_draw_img.o build/ff/obj/lv_draw_label.o build/ff/obj/lv_draw_line.o build/ff/obj/lv_draw_mask.o build/ff/obj/lv_draw_rect.o build/ff/obj/lv_draw_transform.o build/ff/obj/lv_draw_layer.o build/ff/obj/lv_draw_triangle.o build/ff/obj/lv_img_buf.o build/ff/obj/lv_img_cache.o build/ff/obj/lv_img_decoder.o build/ff/obj/lv_gpu_arm2d.o build/ff/obj/lv_draw_pxp.o build/ff/obj/lv_draw_pxp_blend.o build/ff/obj/lv_gpu_nxp_pxp_osa.o build/ff/obj/lv_gpu_nxp_pxp.o build/ff/obj/lv_draw_vglite.o build/ff/obj/lv_draw_vglite_arc.o build/ff/obj/lv_draw_vglite_blend.o build/ff/obj/lv_draw_vglite_line.o build/ff/obj/lv_draw_vglite_rect.o build/ff/obj/lv_vglite_buf.o build/ff/obj/lv_vglite_utils.o build/ff/obj/lv_draw_sdl.o build/ff/obj/lv_draw_sdl_arc.o build/ff/obj/lv_draw_sdl_bg.o build/ff/obj/lv_draw_sdl_composite.o build/ff/obj/lv_draw_sdl_img.o build/ff/obj/lv_draw_sdl_label.o build/ff/obj/lv_draw_sdl_line.o build/ff/obj/lv_draw_sdl_mask.o build/ff/obj/lv_draw_sdl_polygon.o build/ff/obj/lv_draw_sdl_rect.o build/ff/obj/lv_draw_sdl_stack_blur.o build/ff/obj/lv_draw_sdl_texture_cache.o build/ff/obj/lv_draw_sdl_utils.o build/ff/obj/lv_draw_sdl_layer.o build/ff/obj/lv_gpu_stm32_dma2d.o build/ff/obj/lv_draw_sw.o build/ff/obj/lv_draw_sw_arc.o build/ff/obj/lv_draw_sw_blend.o build/ff/obj/lv_draw_sw_dither.o build/ff/obj/lv_draw_sw_gradient.o build/ff/obj/lv_draw_sw_img.o build/ff/obj/lv_draw_sw_letter.o build/ff/obj/lv_draw_sw_line.o build/ff/obj/lv_draw_sw_polygon.o build/ff/obj/lv_draw_sw_rect.o build/ff/obj/lv_draw_sw_transform.o build/ff/obj/lv_draw_sw_layer.o build/ff/obj/lv_gpu_swm341_dma2d.o build/ff/obj/lvgl/src/extra/lv_extra.o build/ff/obj/lvgl/src/extra/layouts/grid/lv_grid.o build/ff/obj/lvgl/src/extra/layouts/flex/lv_flex.o build/ff/obj/lvgl/src/extra/themes/basic/lv_theme_basic.o build/ff/obj/lvgl/src/extra/themes/mono/lv_theme_mono.o build/ff/obj/lvgl/src/extra/themes/default/lv_theme_default.o build/ff/obj/lvgl/src/extra/others/msg/lv_msg.o build/ff/obj/lvgl/src/extra/others/gridnav/lv_gridnav.o build/ff/obj/lvgl/src/extra/others/imgfont/lv_imgfont.o build/ff/obj/lvgl/src/extra/others/fragment/lv_fragment.o build/ff/obj/lvgl/src/extra/others/fragment/lv_fragment_manager.o build/ff/obj/lvgl/src/extra/others/snapshot/lv_snapshot.o build/ff/obj/lvgl/src/extra/others/ime/lv_ime_pinyin.o build/ff/obj/lvgl/src/extra/others/monkey/lv_monkey.o build/ff/obj/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.o build/ff/obj/lvgl/src/extra/libs/freetype/lv_freetype.o build/ff/obj/lvgl/src/extra/libs/gif/gifdec.o build/ff/obj/lvgl/src/extra/libs/gif/lv_gif.o build/ff/obj/lvgl/src/extra/libs/sjpg/lv_sjpg.o build/ff/obj/lvgl/src/extra/libs/sjpg/tjpgd.o build/ff/obj/lvgl/src/extra/libs/png/lv_png.o build/ff/obj/lvgl/src/extra/libs/png/lodepng.o build/ff/obj/lvgl/src/extra/libs/qrcode/lv_qrcode.o build/ff/obj/lvgl/src/extra/libs/qrcode/qrcodegen.o build/ff/obj/lvgl/src/extra/libs/bmp/lv_bmp.o build/ff/obj/lvgl/src/extra/libs/tiny_ttf/lv_tiny_ttf.o build/ff/obj/lvgl/src/extra/libs/fsdrv/lv_fs_littlefs.o build/ff/obj/lvgl/src/extra/libs/fsdrv/lv_fs_win32.o build/ff/obj/lvgl/src/extra/libs/fsdrv/lv_fs_stdio.o build/ff/obj/lvgl/src/extra/libs/fsdrv/lv_fs_fatfs.o build/ff/obj/lvgl/src/extra/libs/fsdrv/lv_fs_posix.o build/ff/obj/lvgl/src/extra/libs/rlottie/lv_rlottie.o build/ff/obj/lvgl/src/extra/widgets/meter/lv_meter.o build/ff/obj/lvgl/src/extra/widgets/spinbox/lv_spinbox.o build/ff/obj/lvgl/src/extra/widgets/led/lv_led.o build/ff/obj/lvgl/src/extra/widgets/span/lv_span.o build/ff/obj/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.o build/ff/obj/lvgl/src/extra/widgets/calendar/lv_calendar.o build/ff/obj/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.o build/ff/obj/lvgl/src/extra/widgets/msgbox/lv_msgbox.o build/ff/obj/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.o build/ff/obj/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.o build/ff/obj/lvgl/src/extra/widgets/animimg/lv_animimg.o build/ff/obj/lvgl/src/extra/widgets/list/lv_list.o build/ff/obj/lvgl/src/extra/widgets/menu/lv_menu.o build/ff/obj/lvgl/src/extra/widgets/keyboard/lv_keyboard.o build/ff/obj/lvgl/src/extra/widgets/spinner/lv_spinner.o build/ff/obj/lvgl/src/extra/widgets/chart/lv_chart.o build/ff/obj/lvgl/src/extra/widgets/win/lv_win.o build/ff/obj/lvgl/src/extra/widgets/tileview/lv_tileview.o build/ff/obj/lvgl/src/extra/widgets/tabview/lv_tabview.o build/ff/obj/lv_font.o build/ff/obj/lv_font_fmt_txt.o build/ff/obj/lv_font_loader.o build/ff/obj/lv_font_dejavu_16_persian_hebrew.o build/ff/obj/lv_font_montserrat_8.o build/ff/obj/lv_font_montserrat_10.o build/ff/obj/lv_font_montserrat_12.o build/ff/obj/lv_font_montserrat_12_subpx.o build/ff/obj/lv_font_montserrat_14.o build/ff/obj/lv_font_montserrat_16.o build/ff/obj/lv_font_montserrat_18.o build/ff/obj/lv_font_montserrat_20.o build/ff/obj/lv_font_montserrat_22.o build/ff/obj/lv_font_montserrat_24.o build/ff/obj/lv_font_montserrat_26.o build/ff/obj/lv_font_montserrat_28.o build/ff/obj/lv_font_montserrat_28_compressed.o build/ff/obj/lv_font_montserrat_30.o build/ff/obj/lv_font_montserrat_32.o build/ff/obj/lv_font_montserrat_34.o build/ff/obj/lv_font_montserrat_36.o build/ff/obj/lv_font_montserrat_38.o build/ff/obj/lv_font_montserrat_40.o build/ff/obj/lv_font_montserrat_42.o build/ff/obj/lv_font_montserrat_44.o build/ff/obj/lv_font_montserrat_46.o build/ff/obj/lv_font_montserrat_48.o build/ff/obj/lv_font_simsun_16_cjk.o build/ff/obj/lv_font_unscii_8.o build/ff/obj/lv_font_unscii_16.o build/ff/obj/lv_hal_disp.o build/ff/obj/lv_hal_indev.o build/ff/obj/lv_hal_tick.o build/ff/obj/lv_anim.o build/ff/obj/lv_anim_timeline.o build/ff/obj/lv_area.o build/ff/obj/lv_async.o build/ff/obj/lv_bidi.o build/ff/obj/lv_color.o build/ff/obj/lv_fs.o build/ff/obj/lv_gc.o build/ff/obj/lv_ll.o build/ff/obj/lv_log.o build/ff/obj/lv_lru.o build/ff/obj/lv_math.o build/ff/obj/lv_mem.o build/ff/obj/lv_printf.o build/ff/obj/lv_style.o build/ff/obj/lv_style_gen.o build/ff/obj/lv_timer.o build/ff/obj/lv_tlsf.o build/ff/obj/lv_txt.o build/ff/obj/lv_txt_ap.o build/ff/obj/lv_utils.o build/ff/obj/lv_arc.o build/ff/obj/lv_bar.o build/ff/obj/lv_btn.o build/ff/obj/lv_btnmatrix.o build/ff/obj/lv_canvas.o build/ff/obj/lv_checkbox.o build/ff/obj/lv_dropdown.o build/ff/obj/lv_img.o build/ff/obj/lv_label.o build/ff/obj/lv_line.o build/ff/obj/lv_roller.o build/ff/obj/lv_slider.o build/ff/obj/lv_switch.o build/ff/obj/lv_table.o build/ff/obj/lv_textarea.o build/ff/obj/lv_drivers/win_drv.o build/ff/obj/lv_drivers/indev/AD_touch.o build/ff/obj/lv_drivers/indev/FT5406EE8.o build/ff/obj/lv_drivers/indev/XPT2046.o build/ff/obj/lv_drivers/indev/evdev.o build/ff/obj/lv_drivers/indev/libinput.o build/ff/obj/lv_drivers/indev/xkb.o build/ff/obj/lv_drivers/gtkdrv/gtkdrv.o build/ff/obj/lv_drivers/display/GC9A01.o build/ff/obj/lv_drivers/display/ILI9341.o build/ff/obj/lv_drivers/display/R61581.o build/ff/obj/lv_drivers/display/SHARP_MIP.o build/ff/obj/lv_drivers/display/SSD1963.o build/ff/obj/lv_drivers/display/ST7565.o build/ff/obj/lv_drivers/display/UC1610.o build/ff/obj/lv_drivers/display/drm.o build/ff/obj/lv_drivers/display/fbdev.o build/ff/obj/lv_drivers/sdl/sdl.o build/ff/obj/lv_drivers/sdl/sdl_common.o build/ff/obj/lv_drivers/sdl/sdl_gpu.o build/ff/obj/assets/checker_24.o build/ff/obj/assets/dejavusans_mono_14.o build/ff/obj/assets/materialdesign_font_40.o build/ff/obj/lv_touch_calibration/lv_tc.o build/ff/obj/lv_touch_calibration/lv_tc_indicator_img.o build/ff/obj/lv_touch_calibration/lv_tc_screen.o build/ff/obj/assets/material/arrow_down.o build/ff/obj/assets/material/arrow_left.o build/ff/obj/assets/material/arrow_right.o build/ff/obj/assets/material/arrow_up.o build/ff/obj/assets/material/back.o build/ff/obj/assets/material/bed.o build/ff/obj/assets/material/cancel.o build/ff/obj/assets/material/clock_img.o build/ff/obj/assets/material/cooldown_img.o build/ff/obj/assets/material/delete_img.o build/ff/obj/assets/material/emergency.o build/ff/obj/assets/material/extrude.o build/ff/obj/assets/material/extrude_img.o build/ff/obj/assets/material/extruder.o build/ff/obj/assets/material/factory_reset_img.o build/ff/obj/assets/material/fan.o build/ff/obj/assets/material/fan_off_img.o build/ff/obj/assets/material/fan_on.o build/ff/obj/assets/material/fine_tune_img.o build/ff/obj/assets/material/firmware_img.o build/ff/obj/assets/material/flow_up_img.o build/ff/obj/assets/material/gui_img.o build/ff/obj/assets/material/heater.o build/ff/obj/assets/material/home.o build/ff/obj/assets/material/home_z.o build/ff/obj/assets/material/hourglass.o build/ff/obj/assets/material/infinity_img.o build/ff/obj/assets/material/info_img.o build/ff/obj/assets/material/layers_img.o build/ff/obj/assets/material/light_img.o build/ff/obj/assets/material/light_off.o build/ff/obj/assets/material/load_filament_img.o build/ff/obj/assets/material/motor_off_img.o build/ff/obj/assets/material/move.o build/ff/obj/assets/material/pa_plus_img.o build/ff/obj/assets/material/pause_img.o build/ff/obj/assets/material/print.o build/ff/obj/assets/material/refresh_img.o build/ff/obj/assets/material/restart_img.o build/ff/obj/assets/material/resume.o build/ff/obj/assets/material/retract_img.o build/ff/obj/assets/material/sd_img.o build/ff/obj/assets/material/shutdown_img.o build/ff/obj/assets/material/speed_up_img.o build/ff/obj/assets/material/spoolman_img.o build/ff/obj/assets/material/support_zip_img.o build/ff/obj/assets/material/switch_stock_img.o build/ff/obj/assets/material/unload_filament_img.o build/ff/obj/assets/material/update_img.o build/ff/obj/assets/material/z_closer.o build/ff/obj/assets/material/z_farther.o build/ff/obj/src/button_container.o build/ff/obj/src/console_panel.o build/ff/obj/src/exclude_object_panel.o build/ff/obj/src/extruder_panel.o build/ff/obj/src/fan_panel.o build/ff/obj/src/file_panel.o build/ff/obj/src/finetune_panel.o build/ff/obj/src/guppyscreen.o build/ff/obj/src/homing_panel.o build/ff/obj/src/image_label.o build/ff/obj/src/init_panel.o build/ff/obj/src/led_panel.o build/ff/obj/src/macro_panel.o build/ff/obj/src/main.o build/ff/obj/src/main_panel.o build/ff/obj/src/mini_print_status.o build/ff/obj/src/mmu_panel.o build/ff/obj/src/mmu_tools.o build/ff/obj/src/net_utils.o build/ff/obj/src/notify_consumer.o build/ff/obj/src/numpad.o build/ff/obj/src/print_panel.o build/ff/obj/src/print_status_panel.o build/ff/obj/src/prompt_panel.o build/ff/obj/src/selector.o build/ff/obj/src/sensor_container.o build/ff/obj/src/setting_panel.o build/ff/obj/src/slider_container.o build/ff/obj/src/spoolman_panel.o build/ff/obj/src/state.o build/ff/obj/src/theme.o build/ff/obj/src/tool_map_panel.o build/ff/obj/src/utils.o build/ff/obj/src/websocket_client.o build/ff/obj/src/wifi_panel.o build/ff/obj/src/wpa_event.o build/ff/obj/src/afc_backend.o build/ff/obj/src/hh_backend.o -static -lm -Lbuild/deps/mipsel-linux-musl/lib -l:libhv.a -latomic -lpthread -Lbuild/deps/mipsel-linux-musl/lib -l:libwpa_client.a -lstdc++fs -lm
+CXX libhv.a
+./build.sh: line 38: echo: write error: Broken pipe
+ABI check failed: no 'nan2008'
